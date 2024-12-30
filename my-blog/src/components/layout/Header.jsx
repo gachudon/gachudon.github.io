@@ -1,15 +1,14 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
 // import './css/layout.css';
-import { StyledHeader } from "./style/StyledLayout";
+import { StyledHeader, StyledLink} from "./style/StyledLayout";
 
 function Header(){
     return(
         <StyledHeader>
-            <Link to="/">
+            <StyledLink className="header-link" to="/">
                 <h1>GaChuDon's Blog</h1>
-            </Link>
+            </StyledLink>
         </StyledHeader>
     );
 }

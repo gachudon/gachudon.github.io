@@ -1,26 +1,50 @@
-import React from "react";
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 export const StyledHeader = styled.header`
+    position:relative;
     width:25%;
     height:120px;
     float:left;
+    margin-bottom:3rem;
 `;
 
 export const StyledNav = styled.nav`
+    position:relative;
     width: 75%;
     height: 120px;
     float: left;
+    margin-bottom:3rem;
+    
+    & ul{
+        display:table;
+        position:absolute;
+        bottom:0;
+    }
+    & li{
+        display:table-cell;
+        padding-right:1rem;
+    }
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration:none;
+    
+    &.header-link {
+        position:absolute;
+        bottom:0;
+    }
 `;
 
 export const StyledAside = styled.aside`
     width:20%;
     height:600px;
     float: left;
+    margin-right:5%;
 `;
 
 export const StyledMain = styled.main`
-    width:80%;
+    width:75%;
     height:600px;
     float:left;
 `;
