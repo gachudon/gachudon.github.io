@@ -3,10 +3,11 @@ import {Link} from "react-router-dom";
 
 import './css/layout.css';
 import './css/Nav.css';
+import { StyledNav } from "./style/StyledLayout";
 
 function Nav(){
     return(
-        <nav>
+        <StyledNav>
             <ul>
                 <li>
                     <Link to="/blogposts">
@@ -24,7 +25,7 @@ function Nav(){
                     </Link>
                 </li>
             </ul>
-        </nav>
+        </StyledNav>
     );
 }
 

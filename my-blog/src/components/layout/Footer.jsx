@@ -1,11 +1,13 @@
 import React from "react";
 import './css/layout.css';
 
+import { StyledFooter } from "./style/StyledLayout";
+
 function Footer(){
     return(
-        <footer>
+        <StyledFooter>
             <h2>Footer</h2>
-        </footer>
+        </StyledFooter>
     );
 }
 

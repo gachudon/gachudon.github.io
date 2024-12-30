@@ -1,12 +1,13 @@
 import React from "react";
 import './css/layout.css';
+import { StyledAside } from "./style/StyledLayout";
 
 function Aside(){
     return(
-        <aside>
-            <h2>카테고리</h2>
+        <StyledAside>
+            <h2>Profile</h2>
             <hr/>
-        </aside>
+        </StyledAside>
     );
 }
 
