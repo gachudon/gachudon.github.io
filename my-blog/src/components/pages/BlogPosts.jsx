@@ -1,9 +1,9 @@
 import React from "react";
 
-function PostList(){
+function BlogPosts(){
     return(
         <h2>Blog Posts</h2>
     );
 }
 
-export default PostList;
+export default BlogPosts;

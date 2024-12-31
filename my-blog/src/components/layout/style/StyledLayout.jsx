@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 export const StyledHeader = styled.header`
     position:relative;
     width:25%;
-    height:120px;
+    height:4rem;
     float:left;
     margin-bottom:3rem;
 `;
@@ -12,7 +12,7 @@ export const StyledHeader = styled.header`
 export const StyledNav = styled.nav`
     position:relative;
     width: 75%;
-    height: 120px;
+    height: 4rem;
     float: left;
     margin-bottom:3rem;
     
@@ -23,7 +23,7 @@ export const StyledNav = styled.nav`
     }
     & li{
         display:table-cell;
-        padding-right:1rem;
+        padding-right:2rem;
     }
 `;
 
@@ -41,6 +41,9 @@ export const StyledAside = styled.aside`
     height:600px;
     float: left;
     margin-right:5%;
+    &>h2 {
+        text-align:center;
+    }
 `;
 
 export const StyledMain = styled.main`

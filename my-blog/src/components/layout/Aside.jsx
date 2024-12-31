@@ -6,7 +6,6 @@ function Aside(){
     return(
         <StyledAside>
             <h2>Profile</h2>
-            <hr/>
         </StyledAside>
     );
 }
