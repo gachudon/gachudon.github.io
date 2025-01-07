@@ -1,6 +1,6 @@
 import React from "react";
-import './css/layout.css';
 
+import './css/layout.css';
 import { StyledFooter } from "./style/StyledLayout";
 
 function Footer(){

@@ -1,7 +1,6 @@
 import React from "react";
 
 import './css/layout.css';
-import './css/Nav.css';
 import { StyledNav, StyledLink} from "./style/StyledLayout";
 
 function Nav(){
