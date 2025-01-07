@@ -6,7 +6,7 @@ function MarkdownReader(props){
     const [markdown, setMarkdown] = useState("");
 
     useEffect(()=>{
-        fetch(`./_posts/${props.fileName}`)
+        fetch(`./blogposts/${props.fileName}`)
         .then((response)=>response.text())
         .then((text)=> setMarkdown(text));
     },[]);
