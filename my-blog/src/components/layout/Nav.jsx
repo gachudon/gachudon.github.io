@@ -8,7 +8,7 @@ function Nav(){
         <StyledNav>
             <ul>
                 <li>
-                    <StyledLink to="/blogposts">
+                    <StyledLink to="/postList">
                         <h2>Blog Posts</h2>
                     </StyledLink>
                 </li>

@@ -1,7 +1,6 @@
 import React from "react";
-import {useEffect, useState} from "react";
-import MarkdownReader from "./MarkdownReader";
 import { StyledLink } from "../layout/style/StyledLayout";
+import postList from "./postList.json";
 
 /**
  * 원래의 계획
@@ -19,21 +18,29 @@ import { StyledLink } from "../layout/style/StyledLayout";
  */
 
 function BlogPosts(){
-    const [json, setJson] = useState('');
-
-    useEffect(()=>{
-        fetch('./blogposts/postList.json')
-        .then((response)=>response.text())
-        .then((text)=> setJson(JSON.parse(text)));
-    },[]);
+    // const postList = json.map(json=>
+    //     <div>
+    //         <StyledLink><h3>{json.title}</h3></StyledLink>
+    //         <p>{json.date}</p>
+    //     </div>
+    // )
     return(
         <>
             <h2>Blog Posts</h2>
             <hr/>
-            <div>
-            <StyledLink><h3>{json.title}</h3></StyledLink>
-            <p>{json.date}</p>
-            </div>
+            {postList.map((postList)=>{
+                return(
+                <div>
+                    <StyledLink to={{
+                        pathname:"/blogposts",
+                        state:{
+                            fileName: `${postList.fileName}`
+                        }
+                    }}><h3>{postList.title}</h3></StyledLink>
+                    <p>{postList.date}</p>
+                </div>
+                );
+            })}
         </>
     );
 }
