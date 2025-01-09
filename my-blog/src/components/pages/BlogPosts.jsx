@@ -31,12 +31,7 @@ function BlogPosts(){
             {postList.map((postList)=>{
                 return(
                 <div>
-                    <StyledLink to={{
-                        pathname:"/blogposts",
-                        state:{
-                            fileName: `${postList.fileName}`
-                        }
-                    }}><h3>{postList.title}</h3></StyledLink>
+                    <StyledLink to="/blogposts" state={{fileName:`${postList.fileName}`}}><h3>{postList.title}</h3></StyledLink>
                     <p>{postList.date}</p>
                 </div>
                 );

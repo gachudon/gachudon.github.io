@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter} from "react-router-dom";
 
 import { StyledContainer } from "./style/StyledApp";
 
@@ -11,7 +10,7 @@ import Nav from '../layout/Nav';
 
 function App() {
   return (
-    <BrowserRouter>
+    
       <StyledContainer>
         <Header/>
         <Nav/>
@@ -19,7 +18,6 @@ function App() {
         <Main/>
         <Footer/>
       </StyledContainer>
-    </BrowserRouter>
   );
 }
 
