@@ -18,12 +18,6 @@ import postList from "./postList.json";
  */
 
 function BlogPosts(){
-    // const postList = json.map(json=>
-    //     <div>
-    //         <StyledLink><h3>{json.title}</h3></StyledLink>
-    //         <p>{json.date}</p>
-    //     </div>
-    // )
     return(
         <>
             <h2>Blog Posts</h2>
@@ -32,7 +26,7 @@ function BlogPosts(){
                 return(
                 <div>
                     <StyledLink to="/blogposts" state={{fileName:`${postList.fileName}`}}><h3>{postList.title}</h3></StyledLink>
-                    <p>{postList.date}</p>
+                    <p>{new Date(Date.parse(postList.date)).toISOString().slice(0,10)}</p>
                 </div>
                 );
             })}
