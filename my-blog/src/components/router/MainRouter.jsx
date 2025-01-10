@@ -2,10 +2,10 @@ import React from "react";
 import {Routes, Route} from "react-router-dom";
 
 import Introduction from "../pages/Introduction";
-import BlogPosts from "../pages/BlogPosts";
+import BlogPosts from "../pages/postList/BlogPosts";
 import Portfolio from "../pages/Portfolio";
 import Cv from "../pages/Cv";
-import MarkdownReader from"../pages/MarkdownReader";
+import MarkdownReader from"../pages/postList/MarkdownReader";
 
 function MainRouter(){
     return(

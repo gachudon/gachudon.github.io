@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledLink } from "../layout/style/StyledLayout";
+import { StyledLink } from "../../layout/style/StyledLayout";
 import postList from "./postList.json";
 
 /**
