@@ -6,7 +6,7 @@ import { StyledAside } from "./style/StyledLayout";
 function Aside(){
     return(
         <StyledAside>
-            <h2>Profile</h2>
+            <h2>허승돈</h2>
         </StyledAside>
     );
 }
