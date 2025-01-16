@@ -36,19 +36,9 @@ export const StyledLink = styled(Link)`
     }
 `;
 
-export const StyledAside = styled.aside`
-    width:20%;
-    height:600px;
-    float: left;
-    margin-right:5%;
-    &>h2 {
-        text-align:center;
-    }
-`;
-
 export const StyledMain = styled.main`
     width:75%;
-    height:600px;
+    min-height:600px;
     float:left;
 `;
 
